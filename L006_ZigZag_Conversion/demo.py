@@ -6,7 +6,7 @@
 # Y A   H R
 # P     I
 
-class Demo.Demo.Demo.Solution:
+class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1 or numRows >= len(s):
             return s
@@ -29,5 +29,5 @@ class Demo.Demo.Demo.Solution:
     
     
 rows = 4
-sol = Demo.Demo.Demo.Solution()
+sol = Solution()
 print(sol.convert("PAYPALISHIRING",rows))
