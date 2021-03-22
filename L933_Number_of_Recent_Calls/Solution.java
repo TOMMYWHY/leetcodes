@@ -10,7 +10,7 @@ class RecentCounter {
         while(queue.size()> 0 && (t - queue.peek()) > 3000){
             queue.pop();
         }
-        return queue.size();
+        return queue.size(); 
     }
 }
 
