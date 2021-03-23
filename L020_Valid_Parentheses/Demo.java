@@ -17,6 +17,7 @@ class Solution {
                 if(c == ']' && stack.pop() != '[' ){return false;}
                 if(c == '}' && stack.pop() != '{' ){return false;}
 
+                
             }
         }
 
