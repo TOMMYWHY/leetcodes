@@ -59,4 +59,19 @@ class Solution {
         }
         return Math.max(result,count);
     }
+
+    public int findMaxConsecutiveOnes_v3(int[] nums) {
+        if(nums.length == 0 || nums==null) return 0;
+        int count=0;
+        int result = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == 1){
+                count ++;
+            }else{
+                result = Math.max(count,result);
+                count = 0; 
+            }
+        }
+        return Math.max(count,result)
+    }
 }
