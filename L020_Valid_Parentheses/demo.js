@@ -26,3 +26,24 @@ var isValid = function(s) {
 };
 
 
+
+var isValid1 = function(s) {
+    const map = new Map();
+
+    map.set("(",")")
+    map.set("[","]")
+    map.set("{","}")
+    const stack = []
+    for (let i = 0; i < s.length; i++) {
+        let left_ = s[i]
+        if(map.has(left_)){
+            stack.push(map.get(left_))
+        }else{
+            if(stack.pop() != left_){
+                return false;
+            }
+        }
+        
+    }
+}
+

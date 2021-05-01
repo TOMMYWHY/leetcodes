@@ -14,3 +14,8 @@ class Solution:
                 return False
             
         return len(stack) == 0
+    
+    
+    def isValid1(self, s: str) -> bool:
+        
+        
